@@ -1,4 +1,4 @@
-// Challenge 1 Starter
+// challenge-01 Starter
 const userObject = {
     firstName: "John",
     lastName: "Doe",

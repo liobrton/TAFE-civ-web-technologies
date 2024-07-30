@@ -1,4 +1,4 @@
-// Challenge 1
+// challenge-01
 // Import the array of books
 import books from "/books.js"
 
