@@ -1,0 +1,13 @@
+main {
+    padding: 10px;
+}
+
+#AboutMe {
+    border:red dashed;
+    border-width: 2px;
+    padding: 5px;
+}
+
+#Services {
+    margin: 20px;
+}
