@@ -1,0 +1,33 @@
+.hover-example:hover{
+    background-color: lightblue;
+}
+
+li:nth-child(odd) {
+    color: red;
+}
+
+p:first-child {
+    font-weight: bold;
+}
+
+.before-example:before {
+    content: 'not the selector Before: ';
+}
+
+/*attribute selectors*/
+input[type="submit"] {
+    background-color: green;
+    color: white;
+}
+
+a[href*="example"]{
+    color: red;
+}
+
+[class$="-btn"] {
+    background-color: darkslategrey;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
