@@ -31,3 +31,7 @@ a[href*="example"]{
     border: none;
     border-radius: 5px;
 }
+
+[class$="-btn"]:hover {
+    background-color: #4f4f4f;
+}
