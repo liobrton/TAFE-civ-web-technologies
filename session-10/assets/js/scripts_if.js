@@ -45,12 +45,17 @@ function isValidEmail(email) {
   // hint: use startsWith(), endsWith() & the or comparison opertor ||
   const starts_with_at = email.startsWith("@");
   const ends_with_at = email.endWith("@");
+  if (starts_with_at || ends_with_at) {
+    feedback += "'@' symbol in invalid position; ";
+  }
 
   // Determine the final validation result & return the feedback messgae
   if (feedback === "") {
     // return a valid message
+    return `The email ${email} is valid.`;
   } else {
     // return aan invalid message use=ing template literals
+    return `The email ${email} is not valid. Reason: ${feedback}`;
   }
 }
 
