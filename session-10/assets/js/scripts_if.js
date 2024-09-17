@@ -29,7 +29,7 @@ function isValidEmail(email) {
   // hint: use split()
   // hint: count the number of parts using .length
   const splitted_email = email.split("@");
-  const includes_multiple_at_symbols = len(splitted_email) > 2 ? True : false;
+  const includes_multiple_at_symbols = splitted_email.length > 2 ? true : false;
   if (includes_multiple_at_symbols) {
     feedback += "Includes more than 1 '@' symbol; ";
   }
@@ -44,7 +44,7 @@ function isValidEmail(email) {
   // Check for "@" at the start or end
   // hint: use startsWith(), endsWith() & the or comparison opertor ||
   const starts_with_at = email.startsWith("@");
-  const ends_with_at = email.endWith("@");
+  const ends_with_at = email.endsWith("@");
   if (starts_with_at || ends_with_at) {
     feedback += "'@' symbol in invalid position; ";
   }
