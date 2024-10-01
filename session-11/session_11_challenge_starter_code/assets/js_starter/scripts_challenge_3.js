@@ -8,3 +8,6 @@ const product = {
 };
 
 // Your code goes here
+for (let info_key in product) {
+  console.log(`Product ${info_key} is ${product[info_key]}`)
+}
