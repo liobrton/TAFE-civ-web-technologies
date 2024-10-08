@@ -3,17 +3,16 @@
 let numbers = [1, 2, 3, 4, 5, 6];
 
 // Find the index of the number 5 in the array
-let searchIndex= numbers.findIndex(number => number === 5);
+const index_of_number = numbers.findIndex((item) => item === NUMBER);
+// if 5 is not present, findIndex() will return -1
 
 // If the number 5 is found in the array
-if (searchIndex !== -1) {
-    // Console log each number in the array up to and including 5
-    numbers.forEach((number, index) => {
-        if (index < searchIndex){
-            console.log(number);
-        }
-    });
-} else{
-// Output a message if the number 5 is not in the array
-    alert("Number not in array");
+if (numbers.includes(NUMBER)) {
+  // Console log each number in the array up to and including 5
+  numbers.forEach((element) => {
+    element <= 5 ? console.log(element) : "";
+  });
+  // I don't like that I can't break out of the loop (normal loop works best probably), but for this purpose it is fine.
+} else {
+  console.log(`The number ${NUMBER} is not in the array.`);
 }
