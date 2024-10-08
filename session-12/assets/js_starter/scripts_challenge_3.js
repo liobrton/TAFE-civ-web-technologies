@@ -9,7 +9,7 @@ if (numbers.includes(5)) {
   // If true, filter out numbers less than 5
   let filtered = numbers.filter((item) => item >= 5);
   console.log(filtered);
-  
+
   // Then square each number in the resulting array
   let mapped = filtered.map((item) => item ** 2);
 
@@ -18,3 +18,4 @@ if (numbers.includes(5)) {
 } else {
   // Output a message if the number 5 is not in the array
   console.log("There is not a 5 in the array.");
+}
