@@ -3,11 +3,17 @@
 let numbers = [1, 2, 3, 4, 5];
 
 // Use the pop() method to remove the last element from the array
-let lastElement = numbers.pop();
+popped = numbers.pop();
+console.log(popped);
+
 // Use the unshift() method to add the last element to the beginning of the array
-numbers.unshift(lastElement);
+numbers.unshift(popped);
+console.log(`unshift = ${numbers}`);
+
 // Use the slice() method to exclude the first 3 elements and return a new array
-let newArray = numbers.slice(3);
+let new_numbers = numbers.slice(3, numbers.length);
+console.log(new_numbers);
+
 // Set the value of the outputfield inner html to the new array
-let outField = document.getElementById("OutputField");
-outField.innerHTML = newArray;
+let outputfield = document.getElementById("OutputField");
+outputfield.innerHTML = new_numbers;
