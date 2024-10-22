@@ -14,9 +14,22 @@ const userObject = {
     linkedIn: "linkedin.com/in/johndoe",
   },
   isEmployed: true,
+
+  changeAge: function (newAge) {
+    this.age = newAge;
+  },
+
+  changeAge2: (newAge) => {
+    this.age = newAge;
+  },
 };
 
 console.log(userObject.firstName); // Output: John
 console.log(userObject.address.city); // Output: Anytown
 console.log(userObject.skills[0]); // Output: JavaScript
 console.log(userObject.socialProfiles.twitter); // Output: @johndoe
+
+clone1 = { ...userObject };
+
+userObject.changeAge2(50);
+console.log(userObject.age);
