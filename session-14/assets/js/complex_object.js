@@ -31,5 +31,5 @@ console.log(userObject.socialProfiles.twitter); // Output: @johndoe
 
 clone1 = { ...userObject };
 
-userObject.changeAge2(50);
+userObject.changeAge2(50); // arrow function scoped to whole window so it can't reach for this.age, and can't change userObject age
 console.log(userObject.age);
