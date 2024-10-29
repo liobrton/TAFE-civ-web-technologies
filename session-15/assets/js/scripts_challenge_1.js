@@ -33,6 +33,7 @@ const calculateTotalPrice = () => {
     // book is the current iterated item
     // total + book.price is the action / function that is being used to manipulate total, generally uses both total and the current iterated item
     // 0 is the iteration to begin at
+
     console.log("Total price of all books:", totalPrice);
 };
 
