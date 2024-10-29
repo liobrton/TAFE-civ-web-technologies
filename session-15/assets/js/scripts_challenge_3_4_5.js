@@ -15,7 +15,7 @@ function originalFunction() {
     console.log("Traditional Message"); // Step 6: Display this message
 }
 
-originalFunction();
+// originalFunction();
 
 async function newFunction(id) {
     try {
@@ -25,12 +25,19 @@ async function newFunction(id) {
         const response = await fetch(
             `https://jsonplaceholder.typicode.com/posts/${id}`
         );
+        if (!response.ok) {
+            throw "Something went wrong. I don't know what. I'm sorry.";
+        }
+
         // Step 3: Parse the response as JSON
         // Step 4: Handle the parsed JSON data
         const data = await response.json();
+
         // Step 5: Display the data
         console.log(data);
     } catch (error) {
         console.error(`An error ocurred: ${error}`);
     }
 }
+
+newFunction(1);
