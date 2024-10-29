@@ -28,7 +28,11 @@ const doublePrices = () => {
 const calculateTotalPrice = () => {
     // Create a constant that take the result of the reduce function
     // Also add a total accumulator to the reduce function arguments
-
+    const totalPrice = books.reduce((total, book) => total + book.price, 0);
+    // total is the current number that will be returned
+    // book is the current iterated item
+    // total + book.price is the action / function that is being used to manipulate total, generally uses both total and the current iterated item
+    // 0 is the iteration to begin at
     console.log("Total price of all books:", totalPrice);
 };
 
